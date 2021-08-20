@@ -1,0 +1,367 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Roboto Mono;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+::selection{
+	background-color: #134c5F;
+	color: #ffffff;
+}
+/*-----MAIN----*/
+#main{
+	width: 100%;
+	min-height: 83vh;
+	background-image: ;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 5%;
+}
+
+.logo{
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu li a{
+	margin: 0px 5px;
+	font-size: 0.8rem
+	letter-spacing: 1px;
+}
+.nav-home,
+.nav-contact,
+.nav-about,
+.nav-skills{
+	padding: 13px 25px;
+}
+.nav-resume,
+.nav-home,
+.nav-contact,
+.nav-about,
+.nav-skills{
+	background-color: #ffffff;
+	color: #0f0e0f;
+	font-weight: 500;
+}
+/*----------MAIN--------*/
+.main-text{
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	transform: translate(-10%,-60%);
+	width: 400px;
+}	
+.main-text h1{
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 50px;
+	color: #178fb6;
+	letter-spacing: 1px;
+}
+.main-text p{
+	font-size: 0.9rem;
+	color: #3a3a3a;
+	margin-top: 10px;
+}
+/*-----ABOUT-----*/
+#about{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+ .about-img{
+	width: 400px;
+	height: 500px;
+}
+.about-img img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: contain;
+}
+.about-text{
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.about-text span{
+	text-transform: uppercase;
+	color: #134c5F;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+/*-----SKILLS-----*/
+#skills{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 50px 0px;
+	background-color: #0d2730;
+}
+.skills-heading{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.skills-heading span{
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 500;
+}
+.skills-heading strong{
+	color: #ffffff;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+.skills-container{
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto;
+	margin: 50px 0px 20px 0px;
+}
+.skills-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20px;
+}
+.skills-box p{
+	color: #ffffff;
+	font-size: 0.9rem;
+}
+.skills-box strong{
+	font-weight: 1rem;
+	font-weight: 600;
+	color: #ffffff;
+}
+/*-----CONTACT------*/
+.contact-box-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 0px 30px;
+}
+.contact-box{
+	background-color: #ffffff;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	border: 1px solid #e2e2e2;
+}
+.contact-box strong{
+	color: #2c2c2c;
+	font-size: 1.3rem;
+}
+.contact-box p{
+	color: #5c5c5c
+	font-weight: 400;
+	margin: 10px;
+	text-align: center;
+}
+.contact-box p span{
+	color: #059bce;
+}
+.contact-box p{
+	color: #252525
+}
+/*-----FOOTER------*/
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	background-color: #0d2730;
+	color: #ffffff;
+	font-size: 0.9rem;
+}
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #0d2730;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+/*-------RESPONSIVENESS------*/
+@media(max-width:1200px){
+	.skills-container{
+		width:100%;
+	}
+}
+@media(max-width:1150px){
+	#main{
+		background-position: left bottom;
+	}
+}
+@media(max-width:1000px){
+	.main-text{
+		left: 20%;
+		transform: translate(-20%,-60%);
+	}
+	#about{
+		flex-direction: column-reverse;
+	}
+	.about-text{
+		width: 90%;
+	}
+	.skills-container{
+		width: 95%;
+	}
+	#contact{
+		margin-top: 40px;
+	}
+}
+@media(max-width:780px){
+	.skills-container{
+		width:100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+	.skills-heading strong{
+		font-size: 1.4rem;
+		text-align: center;
+	}
+	.contact-box-container{
+		flex-wrap: wrap;
+	}
+	.contact-box{
+		width: 100%;
+		text-align: center;
+	}
+}
+@media(max-width:600px){
+	#main{
+		min-height: auto;
+		background-size: 1400px;
+	}
+	.main-text{
+		width:70%;
+		position: static;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px auto;
+		transform: translate(0,0);
+	}
+	.about-img{
+		width: 70%;
+		height: auto;
+		margin: 20px;
+	}
+}
+@media(max-width:460px){
+	.nav-skills{
+		display: none;
+	}
+	.main-text{
+		width: 80%;
+	}
+	.main-btns{
+		flex-direction: column;
+		width: 100%;
+	}
+	.main-text h1,
+	.about-height h2{
+		font-size: 2rem;
+		line-height: 40px;
+	}
+	.skills-heading{
+		width: 90%;
+	}
+	.services-heading strong{
+		font-size: 1.3rem;
+		text-align: center;
+	} 
+}
+@media(max-width:400px){
+	.about-btns{
+		flex-direction: column;
+	}
+	.about-btns a{
+		width: 100%;
+		margin: 10px 0px;
+	}
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
